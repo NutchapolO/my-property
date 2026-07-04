@@ -310,10 +310,11 @@ header h1 {
 footer {
   text-align: center;
   padding: 24px;
-  padding-bottom: 24px;
   background: #1a1a2e;
   color: #888;
   font-size: 0.9rem;
+  position: relative;
+  z-index: 0;
 }
 
 /* Floating Call Button */
@@ -342,15 +343,6 @@ footer {
   box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-@media (max-width: 600px) {
-  .fab {
-    width: 70px;
-    height: 70px;
-    font-size: 2rem;
-    bottom: 20px;
-    right: 16px;
-  }
-}
 
 /* Responsive */
 @media (max-width: 600px) {
