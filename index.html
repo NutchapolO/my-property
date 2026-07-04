@@ -93,7 +93,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="contact container">
+  <section class="contact container" id="contact">
     <h3>ติดต่อเจ้าของ</h3>
     <p>สนใจติดต่อได้เลย:</p>
     <div class="contact-details">
@@ -117,10 +117,8 @@
     <p>&copy; 2026 · เจ้าของขายเอง · สงวนลิขสิทธิ์</p>
   </footer>
 
-  <!-- Sticky Mobile Call Bar -->
-  <div class="sticky-bar">
-    <a href="tel:+66926295445" class="sticky-call">📞 โทรเลย!</a>
-  </div>
+  <!-- Floating Call Button -->
+  <button class="fab" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">📞</button>
 
   <script src="script.js"></script>
 </body>

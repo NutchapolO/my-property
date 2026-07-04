@@ -312,31 +312,33 @@ header h1 {
 footer {
   text-align: center;
   padding: 24px;
-  padding-bottom: 80px;
+  padding-bottom: 24px;
   background: #1a1a2e;
   color: #888;
   font-size: 0.9rem;
 }
 
-/* Sticky Mobile Call Bar */
-.sticky-bar {
-  display: none;
+/* Floating Call Button */
+.fab {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 28px;
+  right: 24px;
   z-index: 999;
-  padding: 12px 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   background: #e63946;
-  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.sticky-call {
-  color: white;
-  font-size: 1.1rem;
-  font-weight: bold;
-  text-decoration: none;
-  letter-spacing: 0.5px;
+.fab:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
 }
 
 /* Responsive */
@@ -344,5 +346,5 @@ footer {
   header h1 { font-size: 1.6rem; }
   .price { font-size: 1.5rem; }
   .overview h2 { font-size: 1.3rem; }
-  .sticky-bar { display: block; }
+
 }
