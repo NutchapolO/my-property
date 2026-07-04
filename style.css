@@ -242,19 +242,26 @@ header h1 {
 }
 
 .contact-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   padding: 14px 28px;
   border-radius: 8px;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
-  background: #1a1a2e;
+  background: #06c755;
   color: white;
   transition: background 0.2s;
 }
 
 .contact-btn:hover {
-  background: #16213e;
+  background: #059c47;
+}
+
+.contact-btn-icon {
+  fill: white;
+  flex-shrink: 0;
 }
 
 .contact-btn.line {
@@ -285,16 +292,23 @@ header h1 {
 }
 
 .share-btn {
-  display: inline-block;
+  display: inline-flex;
   padding: 10px 22px;
   border-radius: 8px;
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: bold;
   transition: opacity 0.2s;
+  align-items: center;
+  gap: 6px;
 }
 
 .share-btn:hover { opacity: 0.85; }
+
+.share-btn-icon {
+  fill: currentColor;
+  flex-shrink: 0;
+}
 
 .share-line {
   background: #06c755;
@@ -317,11 +331,14 @@ footer {
 
 /* Call Box Button */
 .call-box {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   width: 100%;
   margin-top: 24px;
   padding: 16px;
-  background: #e63946;
+  background: #06C755;
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
@@ -333,7 +350,12 @@ footer {
 }
 
 .call-box:hover, .call-box:active {
-  background: #c0303b;
+  background: #059c47;
+}
+
+.call-box-icon {
+  fill: white;
+  flex-shrink: 0;
 }
 
 
