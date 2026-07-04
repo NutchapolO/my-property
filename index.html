@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,25 +17,35 @@
   <!-- Hero Section -->
   <section class="hero">
     <img src="images/over-all-house.jpg" alt="ภาพรวมบ้าน" class="hero-img" />
-    <div class="hero-badge">For Sale</div>
+    <div class="hero-badge">ขายด่วน</div>
   </section>
 
   <!-- Overview -->
   <section class="overview container">
     <h2>สีวลี ถนนมิตรภาพ ตำบลโคกกรวด อำเภอเมืองนครราชสีมา</h2>
-    <p class="price">฿ 5,300,000</p>
+    <p class="price">฿ 5,300,000 <span class="price-badge">ราคาต่อรองได้</span></p>
     <div class="specs">
       <div class="spec">🏠 บ้าน 2 ชั้น</div>
       <div class="spec">🛏 3 ห้องนอน</div>
       <div class="spec">🚿 3 ห้องน้ำ</div>
-<div class="spec">🚗 2 ที่จอดรถ</div>
+      <div class="spec">🚗 2 ที่จอดรถ</div>
       <div class="spec">🔒 ระบบรักษาความปลอดภัย</div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="highlights container">
+    <div class="highlight-grid">
+      <div class="highlight-item">✅ เจ้าของขายเอง ไม่ผ่านนายหน้า</div>
+      <div class="highlight-item">✅ พร้อมอยู่</div>
+      <div class="highlight-item">✅ ราคาต่อรองได้</div>
+      <div class="highlight-item">✅ ทำเลดี ติดถนนมิตรภาพ</div>
     </div>
   </section>
 
   <!-- Description -->
   <section class="description container">
-    <h3>About This Property</h3>
+    <h3>รายละเอียดบ้าน</h3>
     <p>
       บ้าน 2 ชั้น สภาพดี ตกแต่งพร้อมอยู่ ในโครงการสีวลี ถนนมิตรภาพ โคราช
       ประกอบด้วย 3 ห้องนอน 3 ห้องน้ำ พร้อมระบบรักษาความปลอดภัยในบ้าน
@@ -44,13 +54,24 @@
     </p>
   </section>
 
+  <!-- Nearby Places -->
+  <section class="nearby container">
+    <h3>สถานที่ใกล้เคียง</h3>
+    <div class="nearby-grid">
+      <div class="nearby-item">🛍️ <strong>ห้างเทอร์มินอล 21 โคราช</strong><span>~8 กม.</span></div>
+      <div class="nearby-item">🏥 <strong>โรงพยาบาลมหาราชนครราชสีมา</strong><span>~7 กม.</span></div>
+      <div class="nearby-item">🗿 <strong>อนุสาวรีย์ท้าวสุรนารี</strong><span>~8 กม.</span></div>
+      <div class="nearby-item">🎓 <strong>มหาวิทยาลัยเทคโนโลยีสุรนารี</strong><span>~10 กม.</span></div>
+    </div>
+  </section>
+
   <!-- Photo Gallery -->
   <section class="gallery container">
-    <h3>Photos</h3>
+    <h3>รูปภาพ</h3>
     <div class="gallery-grid">
       <img src="images/front-gate.jpg" alt="ประตูทางเข้า" />
       <img src="images/f1-living-1.jpg" alt="ห้องนั่งเล่น" />
-<img src="images/f1-living-3.jpg" alt="ห้องนั่งเล่น 3" />
+      <img src="images/f1-living-3.jpg" alt="ห้องนั่งเล่น 3" />
       <img src="images/f-kitchen-1.jpg" alt="ครัว" />
       <img src="images/f-kitchen-2.jpg" alt="ครัว 2" />
       <img src="images/b-kitchen-1.jpg" alt="ครัวหลัง" />
@@ -61,7 +82,7 @@
 
   <!-- Map / Location -->
   <section class="location container">
-    <h3>Location</h3>
+    <h3>แผนที่</h3>
     <p>สีวลี ถนนมิตรภาพ ตำบลโคกกรวด อำเภอเมืองนครราชสีมา</p>
     <iframe
       src="https://maps.google.com/maps?q=14.9420836,101.9993464&hl=th&z=16&output=embed"
@@ -79,12 +100,26 @@
       <a href="tel:+66804163626" class="contact-btn">📞 080-416-3626 (คุณมัณฑณา)</a>
       <a href="tel:+66824156415" class="contact-btn">📞 082-415-6415 (คุณณัชพล)</a>
     </div>
+
+    <!-- Share Buttons -->
+    <div class="share-section">
+      <p class="share-label">แชร์ให้เพื่อน:</p>
+      <div class="share-buttons">
+        <a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fnutchapolo.github.io%2Fmy-property%2F" target="_blank" class="share-btn share-line">💬 แชร์ LINE</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnutchapolo.github.io%2Fmy-property%2F" target="_blank" class="share-btn share-fb">👍 แชร์ Facebook</a>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 · Selling by owner · All rights reserved</p>
+    <p>&copy; 2026 · เจ้าของขายเอง · สงวนลิขสิทธิ์</p>
   </footer>
+
+  <!-- Sticky Mobile Call Bar -->
+  <div class="sticky-bar">
+    <a href="tel:+66926295445" class="sticky-call">📞 โทรเลย!</a>
+  </div>
 
   <script src="script.js"></script>
 </body>

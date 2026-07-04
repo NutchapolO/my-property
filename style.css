@@ -81,6 +81,20 @@ header h1 {
   color: #e63946;
   font-weight: bold;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.price-badge {
+  font-size: 0.85rem;
+  background: #28a745;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .specs {
@@ -94,6 +108,69 @@ header h1 {
   border-radius: 8px;
   padding: 10px 20px;
   font-size: 1rem;
+}
+
+/* Highlights */
+.highlights {
+  background: #f0f7f0;
+  border-top: 3px solid #28a745;
+  border-bottom: 1px solid #eee;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.highlight-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.highlight-item {
+  background: white;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #155724;
+}
+
+/* Nearby Places */
+.nearby {
+  border-bottom: 1px solid #eee;
+}
+
+.nearby h3 {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  color: #1a1a2e;
+}
+
+.nearby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.nearby-item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.nearby-item strong {
+  flex: 1;
+  color: #1a1a2e;
+}
+
+.nearby-item span {
+  color: #888;
+  font-size: 0.85rem;
+  white-space: nowrap;
 }
 
 /* Description */
@@ -190,13 +267,76 @@ header h1 {
   background: #05b34b;
 }
 
+/* Share Buttons */
+.share-section {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.share-label {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.share-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.share-btn:hover { opacity: 0.85; }
+
+.share-line {
+  background: #06c755;
+  color: white;
+}
+
+.share-fb {
+  background: #1877f2;
+  color: white;
+}
+
 /* Footer */
 footer {
   text-align: center;
   padding: 24px;
+  padding-bottom: 80px;
   background: #1a1a2e;
   color: #888;
   font-size: 0.9rem;
+}
+
+/* Sticky Mobile Call Bar */
+.sticky-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 12px 20px;
+  background: #e63946;
+  text-align: center;
+}
+
+.sticky-call {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.5px;
 }
 
 /* Responsive */
@@ -204,4 +344,5 @@ footer {
   header h1 { font-size: 1.6rem; }
   .price { font-size: 1.5rem; }
   .overview h2 { font-size: 1.3rem; }
+  .sticky-bar { display: block; }
 }
